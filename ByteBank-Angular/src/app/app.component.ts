@@ -8,10 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ByteBank-Angular';
 
-  transferir: any;
+  //[] passando valor inicial para não da erro.
+  transferencias: any[] = [];
 
-  transferencia($event: number){
-    this.transferir = $event;
+  transferir($event: any){
+    console.log($event);
+    const transferencia = {...$event, data: new Date()}
+    this.transferencias.push(transferencia);
   }
 
   

@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Output } from "@angular/core";
-import { Validators } from "@angular/forms";
 
 @Component({
     selector: 'app-nova-transferencia',
