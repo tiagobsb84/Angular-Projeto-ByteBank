@@ -11,11 +11,5 @@ export class AppComponent {
 
   constructor(private service: ServicesService){
 
-  }
-
-  transferir($event: any){
-   this.service.adicionar($event);
-  }
-
-  
+  }  
 }
